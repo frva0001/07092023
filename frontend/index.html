@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="app.css" />
+      <title>min første fullstack app</title>
+   </head>
+   <body>
+      <header>
+         <h1>Min første fullstack app</h1>
+      </header>
+      <section id="top-buttons">
+        <button id="btn-favourites">Show my Favourites</button>
+        <button id="btn-clear">Clear all filters</button>
+        <select id="select-genre">
+            <option>Pop</option>
+            <option>Metal</option>
+            <option>Classical</option>
+            <option>R&B</option>
+            <option>Hip-Hop</option>
+            <option>Rap</option>
+            <option>Indie</option>
+            <option>Country</option>
+            <option>EDM</option>
+            <option></option>
+        </select>
+        <button id="btn-eldest">Sort by Eldest Artist</button>
+        <button id="btn-youngest">Sort by Youngest Artist</button>
+      </section>
+
+      <section id="artists"></section>
+
+      <section class="form-section">
+         <form id="form-create-artist" class="artist-form">
+            <h2>Create Artist</h2>
+            <label>Name <input type="text" name="name" required /></label></br>
+            <label>Birthdate <input type="date" name="birthdate" required /></label></br>
+            <label>Active Since <input type="date" name="activeSince" required /></label></br>
+            <label
+               >Genres
+               <select id="genre1">
+                  <option>Pop</option>
+                  <option>Metal</option>
+                  <option>Classical</option>
+                  <option>R&B</option>
+                  <option>Hip-Hop</option>
+                  <option>Rap</option>
+                  <option>Indie</option>
+                  <option>Country</option>
+                  <option>EDM</option>
+                  <option></option>
+               </select>
+               <select id="genre2">
+                  <option>Pop</option>
+                  <option>Metal</option>
+                  <option>Classical</option>
+                  <option>R&B</option>
+                  <option>Hip-Hop</option>
+                  <option>Rap</option>
+                  <option>Indie</option>
+                  <option>Country</option>
+                  <option>EDM</option>
+                  <option></option>
+               </select>
+               <select id="genre3">
+                  <option>Pop</option>
+                  <option>Metal</option>
+                  <option>Classical</option>
+                  <option>R&B</option>
+                  <option>Hip-Hop</option>
+                  <option>Rap</option>
+                  <option>Indie</option>
+                  <option>Country</option>
+                  <option>EDM</option>
+                  <option></option>
+               </select>
+            </label></br>
+            <label>Labels??? <input type="text" name="labels" required /></label></br>
+            <label>Link to website <input type="url" name="website" required /></label></br>
+            <label>Image <input type="url" name="image" required /></label></br>
+            <label>Description <input type="text" name="shortDescription" required /></label></br>
+            <label>Favourite? 
+                <select id="favourite">
+                    <option>No</option>
+                    <option>Yes</option>
+                </select>
+            </label></br>
+            <button id="btn-create" class="artist-button">Create Artist</button>
+         </form>
+
+         <form id="form-update-artist" class="artist-form">
+            <h2>Update Artist</h2>
+            <label>Name <input type="text" name="name" required /></label></br>
+            <label>Birthdate <input type="date" name="birthdate" required /></label></br>
+            <label>Active Since <input type="date" name="activeSince" required /></label></br>
+            <label
+               >Genres
+               <select id="genre1">
+                  <option>Pop</option>
+                  <option>Metal</option>
+                  <option>Classical</option>
+                  <option>R&B</option>
+                  <option>Hip-Hop</option>
+                  <option>Rap</option>
+                  <option>Indie</option>
+                  <option>Country</option>
+                  <option>EDM</option>
+                  <option></option>
+               </select>
+               <select id="genre2">
+                  <option>Pop</option>
+                  <option>Metal</option>
+                  <option>Classical</option>
+                  <option>R&B</option>
+                  <option>Hip-Hop</option>
+                  <option>Rap</option>
+                  <option>Indie</option>
+                  <option>Country</option>
+                  <option>EDM</option>
+                  <option></option>
+               </select>
+               <select id="genre3">
+                  <option>Pop</option>
+                  <option>Metal</option>
+                  <option>Classical</option>
+                  <option>R&B</option>
+                  <option>Hip-Hop</option>
+                  <option>Rap</option>
+                  <option>Indie</option>
+                  <option>Country</option>
+                  <option>EDM</option>
+                  <option></option>
+               </select>
+            </label></br>
+            <label>Labels??? <input type="text" name="labels" required /></label></br>
+            <label>Link to website <input type="url" name="website" required /></label></br>
+            <label>Image <input type="url" name="image" required /></label></br>
+            <label>Description <input type="text" name="shortDescription" required /></label></br>
+            <label>Favourite? 
+                <select id="favourite">
+                    <option>No</option>
+                    <option>Yes</option>
+                </select>
+            </label></br>
+            <button id="btn-create" class="artist-button">Update Artist</button>
+         </form>
+      </section>
+
+      <script src="app.js"></script>
+   </body>
+</html>
